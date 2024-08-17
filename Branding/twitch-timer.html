@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majestic Coding - Stream Break</title>
+    <link rel="icon" href="twitch.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1d; /* Slightly darker initial background */
+            color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            animation: backgroundFade 5min infinite alternate; /* Background transition */
+        }
+        @keyframes backgroundFade {
+            0% {
+                background-color: #1a1a1d; /* Start with initial color */
+            }
+            100% {
+                background-color: #0d0d0f; /* Transition to darker color */
+            }
+        }
+        img {
+            width: 248.4px;
+            height: auto;
+            margin-bottom: 22.08px;
+            border-radius: 10px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-16.56px);
+            }
+            60% {
+                transform: translateY(-8.28px);
+            }
+        }
+        h1 {
+            font-size: 79.488px;
+            margin: 0;
+            color: #9146ff;
+            text-shadow: 2px 2px #772ce8;
+        }
+        p {
+            font-size: 49.68px;
+            margin-top: 11.04px;
+            color: #ad8aff;
+            text-shadow: 2px 2px #772ce8;
+        }
+        #countdown {
+            font-size: 77.5px;
+            margin-top: 20px;
+            color: #ffffff;
+            text-shadow: 2px 2px #9146ff;
+            background-color: #18181b;
+        }
+    </style>
+</head>
+<body>
+    <img src="twitch.svg" alt="Twitch Icon">
+    <h1>Majestic Coding</h1>
+    <div id="countdown">15:00</div>
+    <p> Stay tuned 📺</p>
+
+    <script>
+        let timeLeft = 15 * 60; // 15 minutes countdown in seconds
+        const countdownElement = document.getElementById('countdown');
+
+        const countdownInterval = setInterval(() => {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+
+            countdownElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+            if (timeLeft > 0) {
+                timeLeft--;
+            } else {
+                countdownElement.textContent = "We're back! 🚀";
+                clearInterval(countdownInterval);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.obsidian/
+.obsidian/plugins/
+.obsidian/themes/
+.DS_Store       
+Thumbs.db       
+backups/   
+HealthMate/
+Not-For-Git/
+Work/
+Twitch/
+YouTube/
+Discord/
+Daily Notes/

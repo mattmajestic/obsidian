@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #9146ff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1"/>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="twitch-color">
+      <g>
+        <polygon class="cls-1" points="129.81 149.64 49.19 149.64 49.19 9.45 189.38 9.45 189.38 91.66 129.81 149.64"/>
+        <path class="cls-3" d="M175.44,92.85l-30.14,28.59h-30.18l-26.41,25.02v-25.02H54.75V14.3h120.69V92.85ZM47.2,0L9.47,35.7V164.3H54.75v35.7l37.73-35.7h30.18l67.87-64.3V0H47.2Zm105.64,40.43h-15.09v42.85h15.09V40.43Zm-56.59-.2h15.09v42.85h-15.09V40.23Z"/>
+      </g>
+      <rect class="cls-2" width="200" height="200"/>
+    </g>
+  </g>
+</svg>
