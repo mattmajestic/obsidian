@@ -1,8 +1,8 @@
 ---
-title: Weather for Clemson, SC
+title: Weather
 date_created:
   "{ date }": 
-location: Clemson, SC
+location: USA
 ---
 ```dataviewjs
 const location = dv.current().location;
@@ -28,7 +28,7 @@ fetchWeather(location).then(data => {
         const feelsLikeF = currentCondition.FeelsLikeF;
         const humidity = currentCondition.humidity;
 
-        dv.header(2, "Current Weather in Clemson, SC");
+
         dv.paragraph(`**Weather:** ${weatherDesc}`);
         dv.paragraph(`**Temperature:** ${tempF}°F (Feels like ${feelsLikeF}°F)`);
         dv.paragraph(`**Humidity:** ${humidity}%`);
